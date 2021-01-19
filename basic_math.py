@@ -98,6 +98,6 @@ def get_median(number_list):
     """
     number_list.sort()
     n = len(number_list)
-    if n//2 == 0: median = (number_list[n//2] + number_list[n//2-1])/2
+    if n%2 == 0: median = (number_list[n//2] + number_list[n//2-1])/2
     else: median = number_list[n//2]
     return median
